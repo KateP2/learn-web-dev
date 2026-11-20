@@ -1,26 +1,304 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Выбор даты и времени</title>
+    <title>STUDIO ÉCLAT - Выбор даты и времени</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!--
-      ЗАДАНИЕ
-      ========
-      Сверстать страницу выбора даты и времени по своему макету.
-
-      Пока это только вёрстка. Никакого JavaScript — ни кликов,
-      ни переходов, ни выбора дня. Всё статично.
-
-      Стили пишите в styles.css. Разметку — здесь.
-    -->
-
+</head>
+<body>
     <div class="page">
-      <!-- Начните отсюда. Разметьте шапку, основную область
-           с календарём и слотами, подвал. -->
+
+        <header class="header">
+            <a href="#" class="logo">STUDIO ÉCLAT</a>
+
+            <nav class="navigation">
+                <a href="#">Услуги</a>
+                <a href="#">Мастера</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Контакты</a>
+            </nav>
+
+            <button class="booking-btn">Записаться</button>
+        </header>
+
+        <section class="booking-progress">
+            <div class="progress-heading">
+                <span>ОНЛАЙН-ЗАПИСЬ</span>
+                <span class="step-counter">ШАГ 3 ИЗ 5</span>
+            </div>
+
+            <div class="booking-steps">
+                <div class="step completed">1. Мастер</div>
+                <div class="step completed">2. Услуга</div>
+                <div class="step active" aria-current="step">3. Дата и время</div>
+                <div class="step">4. Контакты</div>
+                <div class="step">5. Подтверждение</div>
+            </div>
+        </section>
+
+        <main class="main-content">
+
+
+            <div class="calendar-intro">
+                <p class="section-label">ШАГ 03 / КАЛЕНДАРЬ</p>
+
+                <h1 class="page-title">Выберите дату и время</h1>
+
+                <p class="page-description">
+                    Свободные даты мастера Анны Смирновой
+                </p>
+
+                <p class="calendar-hint">
+                    Для проверки сценария без слотов выберите 21 ноября
+                </p>
+            </div>
+
+
+            <div class="booking-layout">
+
+
+                <section class="calendar">
+                    <div class="calendar-header">
+                        <h2 class="calendar-month">Ноябрь 2026</h2>
+
+                        <div class="calendar-arrows">
+                            <button class="arrow-btn" aria-label="Предыдущий месяц">‹</button>
+                            <button class="arrow-btn" aria-label="Следующий месяц">›</button>
+                        </div>
+                    </div>
+
+                    <div class="calendar-grid">
+                        <span class="weekday">Пн</span>
+                        <span class="weekday">Вт</span>
+                        <span class="weekday">Ср</span>
+                        <span class="weekday">Чт</span>
+                        <span class="weekday">Пт</span>
+                        <span class="weekday">Сб</span>
+                        <span class="weekday">Вс</span>
+
+                        <label class="day first-day">
+                            <input type="radio" name="date" value="1">1
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="2">2
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="3">3
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="4">4
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="5">5
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="6">6
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="7">7
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="8">8
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="9">9
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="10">10
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="11">11
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="12">12
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="13">13
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="14">14
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="15">15
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="16">16
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="17">17
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="18">18
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="19">19
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="20" checked>20
+                        </label>
+
+                        <label class="day no-slots">
+                            <input type="radio" name="date" value="21">21
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="22">22
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="23">23
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="24">24
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="25">25
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="26">26
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="27">27
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="28">28
+                        </label>
+
+                        <label class="day">
+                            <input type="radio" name="date" value="29">29
+                        </label>
+                    </div>
+                </section>
+
+ 
+                <section class="time-selection">
+                    <h2 class="time-title">Доступное время</h2>
+
+                    <div class="time-grid">
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="10:00">
+                            10:00
+                        </label>
+
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="11:30">
+                            11:30
+                        </label>
+
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="13:00">
+                            13:00
+                        </label>
+
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="15:30" checked>
+                            15:30
+                        </label>
+
+                        <label class="time-slot">
+                            <input type="radio" name="time" value="17:00">
+                            17:00
+                        </label>
+
+                        <label class="time-slot occupied">
+                            <input type="radio" name="time" value="18:30" disabled>
+                            18:30
+                        </label>
+                    </div>
+
+                    <p class="time-hint">
+                        Выберите удобный временной слот
+                    </p>
+
+
+                    <div class="time-empty">
+                        <h3 class="empty-title">Нет свободного времени</h3>
+                        <p class="empty-description">
+                            На выбранную дату нет свободных слотов.
+                            Пожалуйста, выберите другой день.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+
+            <section class="visit-info">
+                <h2 class="visit-label">ВАШ ВИЗИТ</h2>
+
+                <p class="visit-description">
+                    Анна Смирнова • Маникюр с покрытием гель-лак
+                </p>
+            </section>
+
+
+            <div class="booking-actions">
+                <button class="back-btn">Назад</button>
+                <button class="continue-btn">Продолжить</button>
+                <button class="continue-btn disabled-btn" disabled>
+                    Продолжить
+                </button>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">STUDIO ÉCLAT</a>
+
+                    <p class="footer-description">
+                        Студия красоты и заботы о себе
+                    </p>
+                </div>
+
+                <div class="footer-contacts">
+                    <p class="footer-address">
+                        Нижний Новгород, ул. Белинского, 18
+                    </p>
+
+                    <a href="tel:+79991234567" class="footer-phone">
+                        +7 (999) 123-45-67
+                    </a>
+                </div>
+
+                <div class="footer-hours">
+                    <p>Ежедневно с 10:00 до 21:00</p>
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Studio Éclat
+            </p>
+        </footer>
+
     </div>
-  </body>
+</body>
 </html>
