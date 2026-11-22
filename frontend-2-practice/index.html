@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Выбор даты и времени</title>
+    <title>STUDIO ÉCLAT - Выбор даты и времени</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="page">
-      <!-- Перенесите вашу верстку. Удалите статичные данные. Подключите скрипт -->
+        <header class="header">
+            <a href="#" class="logo">STUDIO ÉCLAT</a>
+            <nav class="navigation" aria-label="Основная навигация">
+                <a href="#" class="nav-link">Услуги</a>
+                <a href="#" class="nav-link">Мастера</a>
+                <a href="#" class="nav-link">Отзывы</a>
+                <a href="#" class="nav-link">Контакты</a>
+            </nav>
+            <button class="booking-btn" type="button">Записаться</button>
+        </header>
+
+        <section class="booking-progress" aria-label="Этапы записи">
+            <div class="progress-heading">
+                <span class="progress-label">ОНЛАЙН-ЗАПИСЬ</span>
+                <span class="step-counter">ШАГ 3 ИЗ 5</span>
+            </div>
+            <div class="booking-steps">
+                <div class="step completed">1. Мастер</div>
+                <div class="step completed">2. Услуга</div>
+                <div class="step active" aria-current="step">3. Дата и время</div>
+                <div class="step">4. Контакты</div>
+                <div class="step">5. Подтверждение</div>
+            </div>
+        </section>
+
+        <main class="main-content" id="booking">
+            <div class="calendar-intro">
+                <p class="section-label">ШАГ 03 / КАЛЕНДАРЬ</p>
+                <h1 class="page-title">Выберите дату и время</h1>
+                <p class="page-description">Свободные даты мастера Анны Смирновой</p>
+                <p class="calendar-hint" id="calendar-hint"></p>
+            </div>
+
+            <div class="booking-layout">
+                <section class="calendar" aria-label="Календарь записи">
+                    <div class="calendar-header">
+                        <h2 class="calendar-month" id="calendar-month">Ноябрь 2026</h2>
+                        <div class="calendar-arrows">
+                            <button class="arrow-btn" id="prev-month" type="button" aria-label="Предыдущий месяц">‹</button>
+                            <button class="arrow-btn" id="next-month" type="button" aria-label="Следующий месяц">›</button>
+                        </div>
+                    </div>
+                    <div class="calendar-grid" id="calendar-grid" aria-label="Дни месяца">
+                    </div>
+                </section>
+
+                <section class="time-selection" aria-label="Выбор времени">
+                    <h2 class="time-title">Доступное время</h2>
+                    <div class="time-grid" id="time-grid">
+                    </div>
+                    <p class="time-hint" id="time-hint">Выберите удобный временной слот</p>
+                </section>
+            </div>
+
+            <section class="visit-info" aria-label="Информация о визите">
+                <h2 class="visit-label">ВАШ ВИЗИТ</h2>
+                <p class="visit-description">Анна Смирнова • Маникюр с покрытием гель-лак</p>
+                <p class="visit-date" id="visit-date" aria-live="polite">Загрузка выбранной даты...</p>
+            </section>
+
+            <div class="booking-actions">
+                <button class="back-btn" id="back-btn" type="button">Назад</button>
+                <button class="continue-btn" id="continue-btn" type="button" disabled>Продолжить</button>
+            </div>
+            <p class="action-message" id="action-message" role="status" aria-live="polite"></p>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">STUDIO ÉCLAT</a>
+                    <p class="footer-description">Студия красоты и заботы о себе</p>
+                </div>
+                <div class="footer-contacts">
+                    <p class="footer-address">Нижний Новгород, ул. Белинского, 18</p>
+                    <a href="tel:+79991234567" class="footer-phone">+7 (999) 123-45-67</a>
+                </div>
+                <div class="footer-hours">
+                    <p class="working-hours">Ежедневно с 10:00 до 21:00</p>
+                </div>
+            </div>
+            <p class="copyright">© 2026 Studio Éclat</p>
+        </footer>
     </div>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
